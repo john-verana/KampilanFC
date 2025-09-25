@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training & Open Play</title>
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-slider" id="cardSlider">
+            <!--Card 1: Today-->
+            <div class="card active">
+                <div class="weather-widget" id="todayWeather">
+                    <div class="loading">Loading...</div>
+                </div>
+                <div class="card-content">
+                    <div class="date-section">
+                        <div class="date-main" id="todayDate">Mon, Sep 23</div>
+                    </div>
+                    <div class="section-header">Open Play & Training</div>
+                    <div class="training-details" id="todayTraining">
+                        <div class="training-time">
+                            <span>⚽</span>
+                            <span>4:00 PM - 7:00 PM</span>
+                    </div>
+                    <div class="training-location">
+                        <span>📍</span>
+                        <span>The Village Sports Club</span>
+                    </div>
+                    <div class="training-type">Open Play Session</div>
+                </div>
+                <div class="additional-info">
+                    <div class="info-title">Today's Session</div>
+                    <div class="info-text">Open Play availabe for all skill levels. Equipment provided on-site.</div>
+                </div>
+            </div>
+         </div>
+
+         <!--Card 2: Tomorrow-->
+         <div class="card next">
+            <div class="weather-widget" id="tomorrowWeather">
+                <div class="loading">Loading...</div>
+            </div>
+            <div class="card-content">
+                <div class="date section">
+                    <div class="date-main" id="tomorrowDate">Tue, Sep 24</div>
+                </div>
+                <div class="section-header">Open Play & Training</div>
+                <div class="training-details" id="tomorrowTraining">
+                    <div class="training-time">
+                        <span>⚽</span>
+                        <span>4:00 PM - 7:00 PM</span>
+                    </div>
+                    <div class="training-location">
+                        <span>📍</span>
+                        <span>The Village Sports Club</span>
+                    </div>
+                    <div class="training-type">Advance Training</div>
+                </div>
+                <div class="additional-info">
+                    <div class="info-title">Tomorrow's Focus</div>
+                    <div class="info-text">Advanced techniques and competitive drills.</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Card 3: Day After Tomorrow-->
+        <div class="card next">
+            <div class="weather-widget" id="dayAfterTomorrowWeather">
+                <div class="loading">Loading...</div>
+            </div>
+            <div class="card-content">
+                <div class="date section">
+                    <div class="date-main" id="dayAfterTomorrowDate">Wed, Sep 25</div>
+                </div>
+                <div class="section-header">Open Play & Training</div>
+                <div class="training-details" id="dayAfterTomorrowTraining">
+                    <div class="no-training">
+                        <div class="no-training-emoji">✈️</div>
+                        <div class="no-training-title">Rest Day</div>
+                        <div class="no-training-message">No scheduled training today. Time to recover and come back stronger! 💪</div>
+                    </div>          
+                    <div class="additional-info">
+                        <div class="info-title">Recovery Day</div>
+                        <div class="info-text">Perfect day for light stretching.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Pagination circles-->
+        <div class="pagination" id="pagination">
+            <div class="circle active" data-slide="0"></div>
+            <div class="circle" data-slide="1"></div>
+            <div class="circle" data-slide="2"></div>
+        </div>
+    </div>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>
